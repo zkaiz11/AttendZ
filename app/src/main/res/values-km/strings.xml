@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AttendZ</string>
+    <string name="welcome">សូមស្វាគមន៍</string>
+    <string name="sign_in">ចូលគណនី</string>
+    <string name="google">Google</string>
+    <string name="sign_up">ចុះឈ្មោះ / បង្កើតគណនីថ្មី</string>
+    <string name="or">ឬក៏</string>
+
+    <string name="user_name">អ្នកប្រើប្រាស់</string>
+    <string name="active_events">ព្រឹត្តិការណ៍កំពុងចូលរួម:</string>
+    <string name="past_events">ព្រឹត្តិការណ៍ដែលចូលរួមមុនៗ:</string>
+    <string name="view_all">មើលទាំងអស់ ></string>
+    <string name="view_full_history">មើលប្រវត្តិទាំងអស់ ></string>
+
+    <string name="setting">ការកំណត់</string>
+    <string name="language">ប្តូរភាសា</string>
+    <string name="theme">ស្បែកផ្ទៃប្រើប្រាស់</string>
+    <string name="history">ប្រវត្តិនៃការប្រើប្រាស់</string>
+</resources>
