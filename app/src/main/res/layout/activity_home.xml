@@ -100,7 +100,15 @@
             android:background="@drawable/rounded_shape_red"
             app:cardCornerRadius="16dp"
             app:cardBackgroundColor="#777b7e"
-            />
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
             android:layout_width="match_parent"
