@@ -10,4 +10,12 @@
     <string name="past_events">Past Events</string>
     <string name="view_all">View All ></string>
     <string name="view_full_history">View All History ></string>
+
+    <!-- Menu-->
+    <string name="home">Home</string>
+    <string name="create_event">Create Event</string>
+    <string name="join_event">Join Event</string>
+    <string name="setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
