@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary_background_theme">#5C808080</color>
     <color name="input">#bebebe</color>
+    <color name="card_background">#d6d6d6</color>
+    <color name="navbar_background">#d7dbd8</color>
 </resources>
