@@ -2,6 +2,7 @@
     <string name="app_name">AttendZ</string>
     <string name="welcome">Welcome</string>
     <string name="sign_in">Sign In</string>
+    <string name="log_out" translatable="false">Log Out</string>
     <string name="google">Google</string>
     <string name="sign_up">Sign Up / Create New Account</string>
     <string name="or">Or</string>
@@ -12,7 +13,19 @@
     <string name="view_all">View All ></string>
     <string name="view_full_history">View All History ></string>
 
+    <!-- Menu-->
+    <string name="home" translatable="false">Home</string>
+    <string name="create_event" translatable="false">Create Event</string>
+    <string name="join_event" translatable="false">Join Event</string>
     <string name="setting">Setting</string>
+
+    <string name="event_name" translatable="false">Event Name</string>
+    <string name="generate_qr" translatable="false">Generate QR</string>
+    <string name="attendance" translatable="false">Attendance</string>
+    <string name="host_name" translatable="false">Host Name</string>
+    <string name="event_date" translatable="false">Event Date</string>
+
+    <string name="empty" translatable="false"> </string>
     <string name="language">Language</string>
     <string name="theme">Theme</string>
     <string name="history">History</string>
