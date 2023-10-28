@@ -7,7 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary_background_theme">#5C808080</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="primary_background_theme">#e3e3e3</color>
     <color name="input">#bebebe</color>
     <color name="card_background">#d6d6d6</color>
     <color name="navbar_background">#d7dbd8</color>

@@ -7,11 +7,14 @@
     android:background="@color/primary_background_theme"
     tools:context=".MainActivity">
 
+    <!-- Dara's task: Implemented new font and add some new designs-->
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
+        android:fontFamily="@font/font_bold"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,6 +42,7 @@
         android:layout_height="128dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/or"
+        android:fontFamily="@font/font_bold"
         android:src="@drawable/ic_app_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,14 +52,14 @@
         android:id="@+id/signInButton"
         android:layout_width="320dp"
         android:layout_height="64dp"
-        android:background="@drawable/rounded_shape_red"
-        android:drawableStart="@drawable/ic_google"
+        android:background="@drawable/rounded_shape_black"
         android:drawablePadding="2dip"
         android:gravity="center"
         android:paddingLeft="60dip"
         android:paddingRight="60dip"
         android:singleLine="true"
         android:text="@string/google"
+        android:fontFamily="@font/font_bold"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,5 +67,20 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signinlanguage"
+        android:fontFamily="@font/font_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton"
+        app:layout_constraintVertical_bias="0.686" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

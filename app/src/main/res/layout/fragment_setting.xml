@@ -7,6 +7,8 @@
     android:background="@color/primary_background_theme"
     >
 
+    <!-- Dara's task: Implemented new font and add some new designs-->
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -42,7 +44,49 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/langugaeButton"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/rounded_shape_black"
+        android:text="@string/language"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayName"
+        android:onClick="onLanguageSwitchClick" />
+
+    <Button
+        android:id="@+id/themeButton"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/rounded_shape_black"
+        android:text="@string/theme"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/langugaeButton" />
+
+
+    <ImageView
+        android:id="@+id/logOuticon"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_signout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="603dp" />
 
     <TextView
         android:id="@+id/displayName"

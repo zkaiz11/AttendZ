@@ -7,6 +7,8 @@
     android:background="@color/primary_background_theme"
     >
 
+    <!-- Dara's task: Implemented new font and add some new designs-->
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -14,6 +16,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/create_event"
+        android:fontFamily="@font/font_bold"
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -32,22 +35,36 @@
         android:inputType="text"
         android:padding="16dp"
         android:hint="@string/event_name"
+        android:fontFamily="@font/font_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="148dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/createEventButton"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_qrcode" />
 
     <Button
         android:id="@+id/createEventButton"
         android:layout_width="257dp"
         android:layout_height="64dp"
         android:layout_marginStart="77dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="77dp"
         android:background="@drawable/rounded_shape_black"
+        android:fontFamily="@font/font_bold"
         android:text="@string/generate_qr"
+        android:textSize="20dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eventNameInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
