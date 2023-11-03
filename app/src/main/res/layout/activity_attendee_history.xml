@@ -23,26 +23,31 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
+
             <TextView
                 android:id="@+id/eventName"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/event_name"/>
+                android:layout_marginStart="-14dp"
+                android:fontFamily="@font/font_black"
+                android:text="@string/event_name"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
             <TextView
                 android:id="@+id/totalAttendee"
-                android:textColor="@color/black"
+                android:layout_marginStart="-14dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-              />
+                android:textColor="@color/black" />
             <TextView
                 android:id="@+id/eventDate"
                 android:textColor="@color/black"
+                android:layout_marginStart="-14dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Event Date: 12 Sep 2024 12:00am"/>
+                android:fontFamily="@font/font_regular"
+                android:text="@string/event_date_history"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -63,6 +68,11 @@
             android:layout_margin="32dp"
             android:background="@drawable/rounded_shape_black"
             android:text="@string/export"
+            android:drawableStart="@drawable/ic_excel_foreground"
+            android:gravity="center"
+            android:paddingLeft="50dip"
+            android:paddingRight="50dip"
+            android:fontFamily="@font/font_bold"
             android:textColor="@color/white"/>
     </FrameLayout>
 </LinearLayout>
