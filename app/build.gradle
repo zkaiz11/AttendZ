@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.attendz"
-        minSdk 21
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -38,6 +38,7 @@ android {
 
 dependencies {
 
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -51,6 +52,7 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.6.1")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

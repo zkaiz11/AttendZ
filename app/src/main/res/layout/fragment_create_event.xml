@@ -1,70 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/primary_background_theme"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     >
-
-    <!-- Dara's task: Implemented new font and add some new designs-->
-
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_margin="16dp"
         android:text="@string/create_event"
-        android:fontFamily="@font/font_bold"
-        android:textColor="@color/black"
+        android:fontFamily="@font/font_black"
+        android:textColor="@color/textcolor"
         android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
 
     <EditText
+        android:layout_margin="16dp"
         android:id="@+id/eventNameInput"
         android:layout_width="324dp"
         android:layout_height="64dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
         android:background="@drawable/input_border"
         android:ems="10"
         android:inputType="text"
         android:padding="16dp"
-        android:hint="@string/event_name"
+        android:fontFamily="@font/font_bold"
+        android:hint="@string/event_name"/>
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_event_error_msg"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_policy"
+        android:fontFamily="@font/font_bold"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_margin="8dp"
+        android:textSize="12dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p1"
         android:fontFamily="@font/font_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:textColor="@color/textcolor" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="148dp"
-        android:layout_height="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/createEventButton"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_qrcode" />
+    <TextView
+        android:padding="8dp"
+        android:textSize="12dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p2"
+        android:fontFamily="@font/font_regular"
+        android:textColor="@color/textcolor" />
+    <TextView
+        android:padding="8dp"
+        android:textSize="12dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p3"
+        android:fontFamily="@font/font_regular"
+        android:textColor="@color/textcolor"
+        />
 
     <Button
+        android:layout_margin="64dp"
         android:id="@+id/createEventButton"
-        android:layout_width="257dp"
+        android:layout_width="256dp"
         android:layout_height="64dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="77dp"
+        android:drawableStart="@drawable/ic_qr_white"
+        android:gravity="center"
+        android:paddingLeft="60dip"
+        android:paddingRight="60dip"
         android:background="@drawable/rounded_shape_black"
-        android:fontFamily="@font/font_bold"
         android:text="@string/generate_qr"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventNameInput" />
+        android:fontFamily="@font/font_bold"
+        android:textColor="@color/white" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
