@@ -7,22 +7,6 @@
     android:background="@color/primary_background_theme"
     android:orientation="vertical"
     >
-
-    <!-- Dara's task: Implemented new font and add some new designs-->
-
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmerView"
-        android:layout_width="418dp"
-        android:layout_height="736dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
-
-        <include layout="@layout/fragment_home_placeholder" />
-    </com.facebook.shimmer.ShimmerFrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -46,10 +30,9 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:text="@string/welcome"
-                    android:fontFamily="@font/font_bold"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_regular"
+                    android:textColor="@color/textcolor"
                     android:textSize="20sp"
-                    android:textStyle="bold"
                     />
                 <TextView
                     android:id="@+id/userName"
@@ -58,10 +41,9 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:text="@string/user_name"
-                    android:fontFamily="@font/font_bold"
-                    android:textColor="@color/black"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/font_black"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
                     />
             </LinearLayout>
             <de.hdodenhof.circleimageview.CircleImageView
@@ -73,108 +55,69 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_margin="20dp"
+            android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_brightness_1_24" />
+
             <TextView
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/past_events"
+                android:text="@string/your_activities"
                 android:fontFamily="@font/font_bold"
-                android:textColor="@color/black"
+                android:textColor="@color/textcolor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="@string/view_full_history"
-                android:fontFamily="@font/font_bold"
-                android:textColor="@color/black"/>
         </LinearLayout>
-
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
             >
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView6"
-                android:layout_width="match_parent"
-                android:layout_height="88dp"
-                android:layout_marginVertical="8dp"
-                android:layout_marginHorizontal="24dp"
-                android:background="@drawable/rounded_shape_red"
-                app:cardBackgroundColor="@color/common_google_signin_btn_text_dark"
-                app:cardCornerRadius="16dp" >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal"
-                    android:paddingStart="16dp"
-                    android:paddingTop="4dp"
-                    android:paddingEnd="16dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/activeEventName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/event_name"
-                            android:fontFamily="@font/font_bold"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/hostName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:text="@string/host_name"
-                            android:fontFamily="@font/font_light"
-                            android:textColor="@color/black" />
-
-                        <TextView
-                            android:id="@+id/eventDate"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/event_date"
-                            android:fontFamily="@font/font_light"
-                            android:textColor="@color/black"/>
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/attendee"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="@string/attendance"
-                        android:fontFamily="@font/font_bold"
-                        android:textColor="@color/black"/>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
+            <Button
+                android:id="@+id/yourEventButton"
+                android:layout_marginStart="32dp"
+                android:layout_width="164dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_shape_black"
+                android:fontFamily="@font/font_bold"
+                android:text="@string/your_event"
+                android:textColor="@android:color/white"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <Button
+                android:background="@android:color/transparent"
+                android:id="@+id/participatedEventButton"
+                android:layout_marginEnd="32dp"
+                android:layout_width="164dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font_bold"
+                android:text="@string/joined_event"
+                />
         </LinearLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lytFragmentHome"/>
 
     </LinearLayout>
 

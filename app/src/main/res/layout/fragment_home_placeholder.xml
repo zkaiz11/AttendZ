@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#4B808080">
+    android:background="@color/primary_background_theme">
 
-    <!-- Dara's task: Implemented new font and add some new designs-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,8 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/past_events"
-            android:fontFamily="@font/font_bold"
-            android:textColor="@color/black"
+            android:textColor="@color/textcolor"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -74,8 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="@string/view_full_history"
-            android:fontFamily="@font/font_bold"
-            android:textColor="@color/black"/>
+            android:textColor="@color/textcolor"/>
     </LinearLayout>
 
     <LinearLayout
@@ -93,7 +90,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_shape_red"
-            app:cardBackgroundColor="#DDDDDD"
+            app:cardBackgroundColor="@color/card_background"
             app:cardCornerRadius="16dp" >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -178,7 +175,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_shape_red"
-            app:cardBackgroundColor="#DDDDDD"
+            app:cardBackgroundColor="@color/card_background"
             app:cardCornerRadius="16dp" >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -263,7 +260,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_shape_red"
-            app:cardBackgroundColor="#DDDDDD"
+            app:cardBackgroundColor="@color/card_background"
             app:cardCornerRadius="16dp" >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -348,7 +345,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_shape_red"
-            app:cardBackgroundColor="#DDDDDD"
+            app:cardBackgroundColor="@color/card_background"
             app:cardCornerRadius="16dp" >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -431,7 +428,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_shape_red"
-            app:cardBackgroundColor="#DDDDDD"
+            app:cardBackgroundColor="@color/card_background"
             app:cardCornerRadius="16dp" >
             <LinearLayout
                 android:layout_width="match_parent"

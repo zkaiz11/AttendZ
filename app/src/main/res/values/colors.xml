@@ -7,9 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="cyan">#00FFFF</color>
-    <color name="primary_background_theme">#e3e3e3</color>
+    <color name="primary_background_theme">#E2E8E6E6</color>
     <color name="input">#bebebe</color>
     <color name="card_background">#d6d6d6</color>
-    <color name="navbar_background">#d7dbd8</color>
+    <color name="navbar_background">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="card">#F0F3F4</color>
+    <color name="navbar_item">#566573</color>
+    <color name="buttonColor">#000000</color>
+    <color name="textcolor">#000000</color>
+    <color name="background_buttonColor">#000000</color>
 </resources>
